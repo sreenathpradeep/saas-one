@@ -5,7 +5,7 @@ const ButtonLogin = (props) => {
   const { isLoggedIn, name } = props;
 
   if (props.isLoggedIn) {
-    return <Link href="/dashboard">Welcome back {name}</Link>;
+    return <Link className = "btn btn-primary" href="/dashboard">Welcome back {name}</Link>;
   }
   return <Link href="/login">Login</Link>;
 };
